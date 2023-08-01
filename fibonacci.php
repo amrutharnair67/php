@@ -12,7 +12,7 @@
         return $fib;
     }
     
-    // Change the value of $length to generate a Fibonacci sequence of different lengths
+    
     $length = 10;
     $result = fibonacci($length);
     
