@@ -16,7 +16,6 @@
     $length = 10;
     $result = fibonacci($length);
     
-    // Output the Fibonacci sequence
     echo "Fibonacci sequence of length $length: ";
     foreach ($result as $num) {
         echo $num . " ";
