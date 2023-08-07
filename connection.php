@@ -1,22 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-    $servername ="localhost";
-    $username="root";
-    $pasword ="";
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database="wtl";
 
-    $conn = new mysqli($servername, $username, $password);
+// Create connection
+$conn = new mysqli($servername, $username, $password,$database);
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-      }
-    echo "successful";
-    ?>
-</body>
-</html>
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+// $sql="Create table college(id INT(2) ,name VARCHAR(6),age int(3))";
+$sql="insert into college values(1,'Amrutha',23)";
+if($conn->query($sql)==TRUE){
+    echo "Created successfully";
+}
+else{
+    echo "not created";
+}
+echo "Connected successfully";
+?>
+
