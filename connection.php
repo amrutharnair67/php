@@ -19,6 +19,6 @@ if($conn->query($sql)==TRUE){
 else{
     echo "not created:(";
 }
-echo "Connected successfully";
+echo "Connected successfully:)";
 ?>
 
