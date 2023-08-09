@@ -14,11 +14,11 @@ if ($conn->connect_error) {
 // $sql="Create table college(id INT(2) ,name VARCHAR(6),age int(3))";
 $sql="insert into college values(1,'Amrutha',23)";
 if($conn->query($sql)==TRUE){
-    echo "Created successfully:)";
+    echo "Created successfully :)";
 }
 else{
     echo "not created :(";
 }
-echo "Connected successfully:)";
+echo "Connected successfully :)";
 ?>
 
